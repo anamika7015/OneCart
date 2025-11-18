@@ -33,7 +33,7 @@ export const register = async (req, res) => {
         return res.status(201).json(user);
     } catch (error) {
         console.log("register error");
-        return res.status(500).json({message: "register error"})
+        return res.status(500).json({message: ` register error ${error}`})
 
     }
 }
